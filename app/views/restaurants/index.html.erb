@@ -1,0 +1,8 @@
+<h1>Vos restos !</h1>
+<%@restaurants.each do |restau|%>
+<ul>
+<li><%=link_to restau.name, show_path(restau)%></li>
+</ul>
+<%end  %>
+
+<p><%=link_to "Ajouter un resto à cette belle liste", new_resto_path %></p>
